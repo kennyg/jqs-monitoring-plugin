@@ -50,14 +50,14 @@
 					<tr bgcolor="${it.getSlavesHolder().getColor(slave)}">
 						<td style="text-align: center; font-size: medium;">
 							<a
-								href="${it.getSlavesHolder().getRootURL()}${slave.getComputer().getUrl()}"> ${slave.getNodeName()} </a>
+								href="/${it.getSlavesHolder().getRootURL()}${slave.getComputer().getUrl()}"> ${slave.getNodeName()} </a>
 						</td>
 						<td style="text-align: center; font-size: large;"> ${countBusy}/${slave.getNumExecutors()} </td>
 						<td style="text-align: center; font-size: large;"> ${slave.getComputer().isOffline() ? "offline" :
 							"online"} </td>
 						<td style="text-align: center; font-size: 70%;">
 							<a
-								href="${it.getSlavesHolder().getRootURL()}${it.getSlavesHolder().getUrl(slave)}"> ${it.getSlavesHolder().getLastBuild(slave)} </a>
+								href="/${it.getSlavesHolder().getRootURL()}${it.getSlavesHolder().getUrl(slave)}"> ${it.getSlavesHolder().getLastBuild(slave)} </a>
 						</td>
 					</tr>
 				</j:forEach>
